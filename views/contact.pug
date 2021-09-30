@@ -1,0 +1,24 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js") 
+
+block style  
+    style
+        include ../static/style.css
+        include ../static/stylecontact.css
+
+block content 
+    div.container
+        h1 Contact Us
+        form(action="/contact" method="post" class="myform")
+            input(type='text', name='name', class='myinput' id='name', placeholder='Enter your Name')
+            input(type='text', name='age', class='myinput' id='age', placeholder='Enter your Age')
+            input(type='text', name='gender', class='myinput' id='gender', placeholder='Enter your Gender')
+            input(type='text', name='contactno', class='myinput' id='contactno', placeholder='Enter your Contact Number')
+            input(type='text', name='email', class='myinput' id='email', placeholder='Enter your Email ID')
+            textarea(name='address', class='myinput' cols='30', rows='6', id='address', placeholder='Enter your Address')
+            textarea(name='more', class='myinput' cols='30', rows='6', id='more', placeholder='More about you')
+            div.butt
+                button.btn Submit
+        

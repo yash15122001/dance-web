@@ -1,0 +1,53 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js") 
+
+block style  
+    style
+        include ../static/style.css
+
+block content
+    section#intro
+        div Welcome to Natraj Dance Academy
+        div.small Live | Learn | Dance
+
+    section#mission
+        h2 Our Mission
+
+        div.card
+            h3 Variety of Dance Forms
+            div.cardbox 
+                div.cardimg 
+                    img(src="/static/img/d1.png")
+                div.cardcontent 
+                    p The division of dance into types can be madeon a variety of grounds like culture and genre. 
+
+        div.card
+            h3 International-Level Perfection 
+            div.cardbox 
+                div.cardimg 
+                    img(src="/static/img/d2.png")
+
+                div.cardcontent 
+                    p Our minds allow us to see the perfectionismwithin other dancers and truly in ourselves. 
+
+        div.card
+            h3 Expert Guidance
+            div.cardbox 
+                div.cardimg 
+                    img(src="/static/img/d3.png")
+                div.cardcontent 
+                    p One of the most vital aspects of all thedances is the choreography and proper guidance. 
+
+        
+    section#sponser
+        h2 Our Sponsers
+        div#sponsers 
+            img(src="/static/img/applelogo.png", alt="Sponser Image")
+            img(src="/static/img/hplogo.png", alt="Sponser Image")
+            img(src="/static/img/mslogo.png", alt="Sponser Image")
+            img(src="/static/img/skypelogo.png", alt="Sponser Image")
+
+    
+

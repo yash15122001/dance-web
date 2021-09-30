@@ -1,0 +1,68 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh;
+    margin: 40px 0;
+}
+
+h1{
+    text-align: center;
+    margin: 12px 0;
+    font-family: 'Bree Serif';
+}
+
+.myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.myinput{
+    display: block;
+    width: 40%;
+    padding: 9px;
+    margin: 8px;
+    font-size: 16px;
+    font-family: 'Bree Serif';
+    border: 2px sold black;
+    border-radius: 10px;
+    outline: none;
+}
+
+textarea {
+    border-style: inset;
+    border-width: 2px;
+}
+
+.butt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn{
+    width: 285px;
+    padding: 7px 23px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    font-size: 18px;
+    font-family: 'Bree Serif';
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: rgb(56, 54, 54);
+    color: white;
+    font-weight: 900;
+}

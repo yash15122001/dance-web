@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "Project3 Dance Website using Pug and Nodejs",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

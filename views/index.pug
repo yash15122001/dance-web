@@ -1,0 +1,65 @@
+doctype html
+html
+    head
+        title Dance website
+        style
+            include ../static/style.css
+    body
+        nav#navbar
+            ul 
+                div#logo 
+                    img(src='/static/img/dlogo.png')
+                li #[a(href="/") Home] 
+                li #[a(href="/") About] 
+                li #[a(href="/") Services] 
+                li #[a(href="/") Schedule] 
+                li #[a(href="/") Contact Us] 
+
+        section#intro
+            div Welcome to Natraj Dance Academy
+            div.small Live | Learn | Dance
+
+        section#mission
+            h2 Our Mission
+
+            div.card
+                h3 Variety of Dance Forms
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/d1.png")
+
+                    div.cardcontent 
+                        p The division of dance into types can be made on a variety of grounds like culture and genre. 
+
+            div.card
+                h3 International-Level Perfection 
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/d2.png")
+
+                    div.cardcontent 
+                        p Our minds allow us to see the perfectionism within other dancers and truly in ourselves. 
+
+            div.card
+                h3 Expert Guidance
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/d3.png")
+
+                    div.cardcontent 
+                        p One of the most vital aspects of all the dances is the choreography and proper guidance. 
+
+        
+        section#sponser
+            h2 Our Sponsers
+            div#sponsers 
+                img(src="/static/img/applelogo.png", alt="Sponser Image")
+                img(src="/static/img/hplogo.png", alt="Sponser Image")
+                img(src="/static/img/mslogo.png", alt="Sponser Image")
+                img(src="/static/img/skypelogo.png", alt="Sponser Image")
+
+        footer#footer 
+            | Copyright &copy; 2021 www.NatrajDanceAcademy.com | All rights reserved        
+            
+        script
+        include ../static/index.js
